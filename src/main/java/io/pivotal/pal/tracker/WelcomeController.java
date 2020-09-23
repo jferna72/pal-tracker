@@ -9,8 +9,8 @@ public class WelcomeController {
 
     private String hello;
 
-    public WelcomeController(@Value("${welcome.message}") String message) {
-        this.hello = message;
+    public WelcomeController(String hello) {
+        this.hello = hello;
     }
 
     @GetMapping("/")
